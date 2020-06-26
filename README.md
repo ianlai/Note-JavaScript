@@ -1,2 +1,2 @@
-# Note-JavaScript2
+# Note-JavaScript
 Created with CodeSandbox
