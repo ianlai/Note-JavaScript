@@ -1,10 +1,10 @@
-import basicMain from "./basic.ts";
+import basicMain from "./basic";
 import {
     useCallbackToSetTimeout,
     usePromiseToSetTimeout,
-    useAsyncFunctionToSetTimeout,
-    usePromise
-} from "./async.ts";
+    useAsyncFunctionToSetTimeout
+} from "./async";
+import usePromise from "./promise";
 
 document.getElementById("app").innerHTML = `
 <h1>Hello Parcel!</h1>
@@ -15,8 +15,10 @@ document.getElementById("app").innerHTML = `
 </div>
 `;
 
-//basicMain();
-useCallbackToSetTimeout();
-usePromiseToSetTimeout();
-useAsyncFunctionToSetTimeout();
-// usePromise();
+// basicMain();
+
+// useCallbackToSetTimeout();
+// usePromiseToSetTimeout();
+// useAsyncFunctionToSetTimeout();
+
+usePromise();
