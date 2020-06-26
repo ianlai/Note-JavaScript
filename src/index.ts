@@ -1,3 +1,5 @@
+import basicMain from "./basic.ts";
+
 document.getElementById("app").innerHTML = `
 <h1>Hello Parcel!</h1>
 <div>
@@ -6,18 +8,6 @@ document.getElementById("app").innerHTML = `
   for more info about Parcel.
 </div>
 `;
-
-let a = [1, 2, 3];
-let b = [3, 4, 5];
-let c = [...a, ...b];
-console.log(c);
-
-let message = "Yoyoyo"; //assign
-console.log(message.toUpperCase());
-
-let ll: number; //declare type
-ll = 3;
-console.log(ll);
 
 //===============================
 
