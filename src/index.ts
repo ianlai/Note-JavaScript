@@ -1,8 +1,9 @@
 import basicMain from "./basic.ts";
 import {
-  useCallbackToSetTimeout,
-  usePromiseToSetTimeout,
-  usePromise
+    useCallbackToSetTimeout,
+    usePromiseToSetTimeout,
+    useAsyncFunctionToSetTimeout,
+    usePromise
 } from "./async.ts";
 
 document.getElementById("app").innerHTML = `
@@ -14,8 +15,8 @@ document.getElementById("app").innerHTML = `
 </div>
 `;
 
-basicMain();
-
+//basicMain();
 useCallbackToSetTimeout();
 usePromiseToSetTimeout();
-usePromise();
+useAsyncFunctionToSetTimeout();
+// usePromise();
