@@ -5,7 +5,8 @@ import {
     useAsyncFunctionToSetTimeout
 } from "./async";
 import usePromise from "./promise";
-import fetchUrl from "./fetch";
+import getUrlByFetch from "./fetch";
+import getUrlByAxios from "./axios";
 
 document.getElementById("app").innerHTML = `
 <h1>Hello Dog-Lovers:</h1>
@@ -14,18 +15,29 @@ document.getElementById("app").innerHTML = `
   <a href="http://www.vetstreet.com/dogs/" target="_blank" rel="noopener noreferrer">here</a>
   for more info about the street dogs.
 </div>
-<img id="imgDog" border="0" alt="W3Schools" src="" width="300"/>
-<button id="loadButton"> Load </button>
+
+<h1>Dog1 (Fetch)</h1>
+<img id="imgDog1" border="0" alt="Dog1" src="" width="300"/>
+
+<h1>Dog2 (Axios)</h1>
+<img id="imgDog2" border="0" alt="Dog2" src="" width="300"/>
+
 <p>
 <p>
 `;
 
-let loadButton = document.getElementById("loadButton");
-if (loadButton) {
-    loadButton.addEventListener("click", fetchUrl);
+let imgDog1 = document.getElementById("imgDog1");
+if (imgDog1) {
+    imgDog1.addEventListener("click", getUrlByFetch);
 }
 
-fetchUrl();
+let imgDog2 = document.getElementById("imgDog2");
+if (imgDog2) {
+    imgDog2.addEventListener("click", getUrlByAxios);
+}
+
+getUrlByFetch();
+getUrlByAxios();
 
 // basicMain();
 // useCallbackToSetTimeout();

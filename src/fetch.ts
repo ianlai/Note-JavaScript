@@ -1,7 +1,7 @@
 let dogApiUrl = "https://dog.ceo/api/breeds/image/random";
 
-let fetchUrl = () => {
-    let imgDog = document.getElementById("imgDog");
+let getUrlByFetch = () => {
+    let imgDog = document.getElementById("imgDog1");
 
     fetch(dogApiUrl)
         .then(res => {
@@ -9,7 +9,7 @@ let fetchUrl = () => {
             return res.json();
         })
         .then(resJSON => {
-            console.log("img:", resJSON.message);
+            console.log("(fetch) img:", resJSON.message);
             imgDog.src = resJSON.message;
         })
         .catch(() => {
@@ -17,4 +17,4 @@ let fetchUrl = () => {
         });
 };
 
-export default fetchUrl;
+export default getUrlByFetch;
