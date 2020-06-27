@@ -1,5 +1,4 @@
 let dogApiUrl = "https://dog.ceo/api/breeds/image/random";
-
 let getUrlByFetch = () => {
     let imgDog = document.getElementById("imgDog1");
 

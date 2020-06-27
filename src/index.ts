@@ -16,6 +16,10 @@ document.getElementById("app").innerHTML = `
   for more info about the street dogs.
 </div>
 
+<div>
+<h3> Click on the image to load a new doggie. </h3> 
+</div>
+
 <h1>Dog1 (Fetch)</h1>
 <img id="imgDog1" border="0" alt="Dog1" src="" width="300"/>
 

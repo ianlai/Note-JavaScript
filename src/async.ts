@@ -52,8 +52,6 @@ async function useAsyncFunctionToSetTimeout() {
     printMessage("(3) async func");
 }
 
-//-----------------------------------
-
 export {
     useCallbackToSetTimeout,
     usePromiseToSetTimeout,
